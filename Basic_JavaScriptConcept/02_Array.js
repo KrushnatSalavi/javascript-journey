@@ -45,3 +45,9 @@ console.log(slice);
 
 let splice = marsks.splice(1, 3, 5);
 console.log(splice);
+
+let fruits = ["mango", "apple", "banana"];
+
+for (let i = 0; i < fruits.length; i++) {
+    console.log(i+1, fruits[i])
+}
