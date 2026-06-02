@@ -53,3 +53,15 @@ const filterStd = student2.filter(stu => stu.age > 21);
 
 console.log(filterStd);
 
+let Dev = {
+	name:"Krushnat",
+	age:"21",
+	
+};
+
+const info = function(anyobject){
+	console.log(`Devloper ${anyobject.name}Age${anyobject.age}`)
+}
+
+info(Dev);
+
