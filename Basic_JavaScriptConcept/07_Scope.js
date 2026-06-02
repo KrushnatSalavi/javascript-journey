@@ -23,7 +23,7 @@ test();
     let age = 21;
 }
 
-console.log(age); //ReferenceError: age is not defined
+// console.log(age); //ReferenceError: age is not defined
 
 //Lexical Scope
 
