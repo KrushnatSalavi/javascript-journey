@@ -17,6 +17,18 @@ counter();
 counter();
 counter();
 
+const count = function() {
+	let ct = 0;
+	return function() {
+		ct++;
+		console.log(ct);
+	}
+}
+
+const count1 = count();
+count1();
+count1();
+
 // Real world example of Bank Account
 
 const bankAc = function(){
