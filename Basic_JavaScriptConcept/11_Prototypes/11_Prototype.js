@@ -17,3 +17,14 @@ console.log(
 const name = "Krushna";
 
 console.log(name.toUpperCase());
+
+//Adding Your Own Prototype Methods
+
+Array.prototype.sayHello =
+function() {
+    console.log("Hello");
+};
+
+const arr1 = [1, 2, 3];
+
+arr1.sayHello();
