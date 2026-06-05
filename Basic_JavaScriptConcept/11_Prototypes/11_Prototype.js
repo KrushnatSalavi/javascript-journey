@@ -28,3 +28,28 @@ function() {
 const arr1 = [1, 2, 3];
 
 arr1.sayHello();
+
+const user2 = {
+    name: "Krushna"
+};
+
+console.log(
+    user2.hasOwnProperty("name")
+);
+
+
+// Prototype Chain Example
+
+function User3(name) {
+    this.name = name;
+}
+
+User3.prototype.greet =
+function() {
+    console.log("Hello");
+};
+
+const user3 = new User3("Krushna");
+
+user3.greet();
+console.log(user3);
