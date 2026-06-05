@@ -10,6 +10,7 @@ const user = {
 
 greet.call(user);
 
+
 function greet2(city) {
     console.log(
         `${this.name} from ${city}`
