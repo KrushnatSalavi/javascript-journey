@@ -56,3 +56,10 @@ console.log(user3);
 
 // hasOwnProperty() method is used to check if the property is present in the object itself or in its prototype chain. It returns true if the property is present in the object itself and false if it is present in the prototype chain.
 
+const user = {
+    name: "Krushna"
+};
+
+console.log(
+    user.hasOwnProperty("name")
+);
