@@ -32,3 +32,17 @@ class Teacher extends Person {
 
 const t = new Teacher();    
 t.greet();
+
+
+// static methods
+
+class MathHelper {
+
+    static add(a, b) {
+        return a + b;
+    }
+
+}
+console.log(
+    MathHelper.add(10, 20)
+);
