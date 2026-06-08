@@ -22,3 +22,8 @@ class Student extends Person {
     }
 
 }
+
+const s =
+    new Student("Krushna");
+
+s.greet();
