@@ -20,3 +20,9 @@ console.log("End");
 // Start
 // (wait 5 seconds)
 // End
+
+//The entire program is blocked.
+
+// Users hate this.
+
+//Instead of waiting: We use Asynchronous code to handle such tasks without blocking the main thread.
