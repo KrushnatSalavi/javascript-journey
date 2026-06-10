@@ -14,3 +14,13 @@ async function loadData() {
     }
 
 }
+
+function getData() {
+
+    return new Promise((resolve, reject) => {   
+
+    });
+
+}
+
+loadData();
