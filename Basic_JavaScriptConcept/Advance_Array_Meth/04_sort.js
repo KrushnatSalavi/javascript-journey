@@ -1,16 +1,18 @@
 const nums = [10, 5, 20];
 
-nums.sort(); // Default sorting (lexicographical) wrong for numbers
+const defaultSorted = nums.sort(); // Default sorting (lexicographical) wrong for numbers
+console.log(defaultSorted); // Output might be [10, 20, 5] which is incorrect for numbers
+
 
 // To sort numbers correctly, we need to provide a compare function
 
-nums.sort((a, b) => a - b); // Ascending order
+const sortedNums = nums.sort((a, b) => a - b); // Ascending order
+console.log(sortedNums);
 
-nums.sort((a, b) => b - a); // Descending order
-
-console.log(nums);
+const descendingNums = nums.sort((a, b) => b - a); // Descending order
+console.log(descendingNums);
 
 const names = ["John", "Alice", "Bob"];
 
-names.sort();   
-console.log(names); 
+const sortedNames = names.sort();   
+console.log(sortedNames); 
