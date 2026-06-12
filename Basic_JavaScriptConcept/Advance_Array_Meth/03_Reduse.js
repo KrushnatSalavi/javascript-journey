@@ -11,3 +11,6 @@ let myCart = [
 
 const TotalPrc = myCart.reduce((acc, curr) => acc + curr.price, 0);
 console.log(TotalPrc);
+
+const newarr = myarr.reduce((acc,curr) => curr+3 + acc+curr, 0);
+console.log(newarr);
