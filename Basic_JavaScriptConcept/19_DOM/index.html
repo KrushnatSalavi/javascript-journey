@@ -5,13 +5,20 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>DOM</title>
+
+    
 </head>
 
 <body>
     <div class="container">
-        <h1 class="title">DOM</h1>
-        <p class="text">Lorem ipsum dolor sit, amet consectetur adipisicing.</p>
+        <h1 id="title">DOM</h1>
+        <p id="text">Lorem ipsum dolor sit, amet consectetur adipisicing.</p>
     </div>
+
+    <script >
+        document.getElementById("title").innerHTML = "<h1>DOM Manipulation</h1>";
+        document.getElementById("text").innerHTML = "<p>This is a simple example of DOM manipulation.</p>";
+        </script>
 </body>
 
 </html>
