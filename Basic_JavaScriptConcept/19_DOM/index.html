@@ -7,7 +7,7 @@
     <title>DOM</title>
 
     <style>
-        body{
+        body {
             font-family: Arial, sans-serif;
             background-color: #caadad;
             margin: 0;
@@ -16,15 +16,29 @@
     </style>
 </head>
 
-<body >
+<body>
     <div class="container">
         <h1 id="title">DOM</h1>
         <p id="text">Lorem ipsum dolor sit, amet consectetur adipisicing.</p>
+
+        <ul>
+            <li>one</li>
+            <li>two</li>
+            <li>three</li>
+            <li>four</li>
+            <li>five</li>
+        </ul>
     </div>
 
     <script>
-        document.getElementById("title").innerHTML = "<h1>DOM Manipulation</h1>";
+        document.getElementById("title").innerHTML = "DOM Manipulation";
         document.getElementById("text").innerHTML = "<p>This is a simple example of DOM manipulation.</p>";
+
+        const head = document.getElementById('title');
+
+        head.style.backgroundColor ='pink';
+        head.style.padding = '20px';
+
     </script>
 </body>
 
