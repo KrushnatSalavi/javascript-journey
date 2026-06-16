@@ -1,11 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
+
 <body>
-    
+
+    <h1 style="background-color: pink;padding:30px;text-align: center;border-radius: 25px;margin: auto;">Converting HTMl node into Array</h1>
+    <ul>
+        <li>1</li>
+        <li>2</li>
+        <li>3</li>
+        <li>4</li>
+    </ul>
+
+    <script>
+        const List = document.querySelectorAll('li');
+        const convertli = Array.from(List);
+
+        convertli.forEach( (li)=> {
+            li.style.color = "red";
+        })
+    </script>
 </body>
+
 </html>
