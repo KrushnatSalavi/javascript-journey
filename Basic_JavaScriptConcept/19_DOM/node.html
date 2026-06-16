@@ -17,6 +17,14 @@
         <li>4</li>
     </ul>
 
+    <h2>Days</h2>
+
+    <div id="parent">
+        <div>Monday</div>
+        <div>Tuesday</div>
+        <div>Wednesday</div>
+    </div>
+
     <script>
         const List = document.querySelectorAll('li');
         const convertli = Array.from(List);
@@ -30,6 +38,15 @@
         for(let i=0; i < List.length; i++){
             document.write(List[i].innerHTML);
         }
+
+        const Day = document.querySelector('#parent')
+        console.log(Day);
+        console.log(Day.children);
+        console.log(Day.children[2].innerHTML);
+
+
+
+
     </script>
 </body>
 
