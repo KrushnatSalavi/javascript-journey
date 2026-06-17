@@ -45,6 +45,15 @@
     }
 
     addLanguageOPT("React");
+
+    // Edit values 
+
+    const secondlang = document.querySelector('li:nth-child(2)')
+    // secondlang.innerHTML = 'java';
+    const newlang  = document.createElement('li')
+    newlang.textContent = "Next.js"
+    secondlang.replaceWith(newlang);
+
 </script>
 
 </html>
