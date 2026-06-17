@@ -6,6 +6,10 @@
     <title>New Element </title>
 </head>
 <body>
+
+    <ul class="List">
+        <li>JavaScript</li>
+    </ul>
     
 </body>
 
@@ -18,5 +22,14 @@
    newdiv.style.backgroundColor="pink"
    document.body.appendChild(newdiv);
    newdiv.innerText = 'Hello world!'
+
+   function addLanguage(addlang){
+    const li = document.createElement('li')
+    li.innerHTML = `${addlang}`
+    document.querySelector('.List').appendChild(li)
+
+   }
+
+   addLanguage("Python");
 </script>
 </html>
