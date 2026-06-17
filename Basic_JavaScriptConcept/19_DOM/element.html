@@ -14,6 +14,8 @@
 </body>
 
 <script>
+
+    
    const newdiv =  document.createElement('div');
    newdiv.style.height='150px';
    newdiv.style.width='150px';
@@ -31,5 +33,15 @@
    }
 
    addLanguage("Python");
+
+   // Adding Elements in optimise way
+
+   function addLanguageOPT(language){
+    const li = document.createElement('li')
+    li.appendChild(document.createTextNode(language));
+    document.querySelector('.List').appendChild(li)
+   }
+
+   addLanguageOPT("React");
 </script>
 </html>
