@@ -31,4 +31,5 @@ class Student1 {
 
 const student =
     new Student1("Krushna", 21);
-    student.greet();
+
+student.greet();
