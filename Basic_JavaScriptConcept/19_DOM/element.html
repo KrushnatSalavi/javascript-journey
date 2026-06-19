@@ -63,12 +63,13 @@
 
 
     function add(lang){
-        const li = document.createElement(li)
+        const li = document.createElement('li')
         li.appendChild(document.createTextNode(lang));
-        const add = document.querySelector('.List').appendChild('li');
+        document.querySelector('.List').appendChild(li);
     
     }
 
+    add("Java");
 
 </script>
 
