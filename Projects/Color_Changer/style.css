@@ -3,3 +3,33 @@ h1{
     padding-top: 150px;
     
 }
+
+#color-container{
+    display: flex;
+    gap: 50px;
+    justify-content: center;
+}
+
+#pick1{
+    height: 100px;
+    width: 100px;
+    background-color: aquamarine;
+}
+
+#pick2{
+    height: 100px;
+    width: 100px;
+    background-color: rgb(212, 189, 38);
+}
+
+#pick3{
+    height: 100px;
+    width: 100px;
+    background-color: rgb(203, 36, 147);
+}
+
+#pick4{
+    height: 100px;
+    width: 100px;
+    background-color: rgb(22, 38, 179);
+}
