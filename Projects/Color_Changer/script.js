@@ -10,8 +10,11 @@ button.forEach(function (button) {
         if(e.target.id === 'pick1'){
             body.style.backgroundColor = 'aquamarine'
         }
-        
+        else if(e.target.id === 'pick2'){
+            body.style.backgroundColor = 'rgb(212, 189, 38)'
         }
+
+        
 
 
 
