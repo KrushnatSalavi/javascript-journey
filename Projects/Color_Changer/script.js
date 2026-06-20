@@ -14,7 +14,11 @@ button.forEach(function (button) {
             body.style.backgroundColor = 'rgb(212, 189, 38)'
         }
 
-        
+        else if(e.target.id === 'pick3'){
+            body.style.backgroundColor = "rgb(203, 36, 147)"
+        }
+
+       
 
 
 
