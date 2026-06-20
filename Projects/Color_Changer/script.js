@@ -18,7 +18,9 @@ button.forEach(function (button) {
             body.style.backgroundColor = "rgb(203, 36, 147)"
         }
 
-       
+        else{
+            body.style.backgroundColor = "rgb(22, 38, 179)"
+        }
 
 
 
