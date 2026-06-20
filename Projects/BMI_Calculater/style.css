@@ -1,0 +1,22 @@
+body{
+    background-color: rgb(136, 130, 130);
+}
+
+h1{
+ padding-left: 50px;
+}
+
+form{
+    margin-left: 80px;
+}
+
+input{
+    padding: 5px;
+    margin:5px;
+}
+
+button{
+    height: 35px;
+    width: 125px;
+    margin-left:125px;
+}
