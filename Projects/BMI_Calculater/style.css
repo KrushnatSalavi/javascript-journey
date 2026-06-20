@@ -28,3 +28,8 @@ button:hover{
     box-shadow: 0 0 15px rgba(0, 0, 0, 0.4);
     border-color: rgb(250, 248, 248);
 }
+
+#results{
+    color: red;
+    margin: 10px;
+}
