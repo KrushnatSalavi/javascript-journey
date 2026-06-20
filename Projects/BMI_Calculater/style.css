@@ -19,4 +19,12 @@ button{
     height: 35px;
     width: 125px;
     margin-left:125px;
+    border-radius: 10px;
+    
+}
+
+button:hover{
+    transform: scale(1.1);
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.4);
+    border-color: rgb(250, 248, 248);
 }
