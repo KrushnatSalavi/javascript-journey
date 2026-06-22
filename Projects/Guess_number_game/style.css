@@ -1,41 +1,41 @@
-body{
+body {
     background-color: #212121;
     color: #fff;
 
 
 }
 
-#wrapper{
+#wrapper {
     background-color: #4b4848;
     margin: 50px;
     padding: 50px;
-     text-align: center;
+    text-align: center;
 
 }
 
-h1{
+h1 {
     color: black;
     text-align: center;
 
 }
 
-input{
+input {
     margin: 10px;
     border-radius: 10px;
 }
 
-#guessField{
+#guessField {
     height: 35px;
     border: solid black 1.5px;
 }
 
-#guessField:hover{
+#guessField:hover {
     transform: scale(1.1);
     box-shadow: 0 0 15px #212121;
 }
 
 
-#subt{
+#subt {
     height: 40px;
     width: 100px;
     background-color: rgb(28, 27, 27);
@@ -44,7 +44,21 @@ input{
 
 }
 
-#subt:hover{
+#subt:hover {
+    transform: scale(1.1);
+    border: solid black 4px;
+}
+
+#newGame {
+    height: 40px;
+    width: 100px;
+    background-color: rgb(28, 27, 27);
+    color: #fff;
+    border: solid black 2px;
+    border-radius: 10px;
+}
+
+#newGame:hover {
     transform: scale(1.1);
     border: solid black 4px;
 }
