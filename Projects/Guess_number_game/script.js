@@ -32,7 +32,7 @@ function validateGuess(guess) {
         alert("Enter a number smaller than 100")
     }
     else {
-        prevGuess.push( guess);
+        prevGuess.push(guess);
         if (numGuess === 11) {
             dispalyGuess(guess)
             dispalyMessage(`Game Over . Randome number was ${randmNumber}`);
@@ -42,9 +42,9 @@ function validateGuess(guess) {
         else {
             dispalyGuess(guess)
             cheakGuess(guess);
-            }
         }
     }
+}
 
 
 function cheakGuess(guess) {
@@ -63,9 +63,9 @@ function cheakGuess(guess) {
 
 function dispalyGuess(guess) {
     userInput.value = '';
-    guessSlot.innerHTML +=`${guess} `;
+    guessSlot.innerHTML += `${guess} `;
     numGuess++;
-    remaining.innerHTML = `${11-numGuess}`;
+    remaining.innerHTML = `${11 - numGuess}`;
 }
 
 function dispalyMessage(message) {
@@ -73,9 +73,21 @@ function dispalyMessage(message) {
 }
 
 function endGame() {
-    
+    userInput.value = ''
+    userInput.setAttribute('disabled', '')
+    p.classList.add('button')
+    p.innerHTML = `<h3 id='newGame'>Start new Game</h3>`
+    startOver.appendChild(p)
+    playGame = false;
+    NewGame();
 }
 
 function NewGame() {
-    //
+    const newGameButton = document.querySelector('#newGame');
+    newGameButton.addEventListener('click', function (e) {
+
+
+        playGame = true;
+
+    })
 }
