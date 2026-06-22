@@ -31,11 +31,18 @@ function validateGuess(guess) {
     else if (guess > 100) {
         alert("Enter a number smaller than 100")
     }
-    else{
+    else {
         prevGuess.push(guess);
-        if(numGuess === 11){
+        if (numGuess === 11) {
             dispalyGuess(guess)
             dispalyMessage(`Game Over . Randome number was ${randmNumber}`)
+            endGame()
+
+        }
+        else {
+            dispalyGuess(guess){
+                cheakGuess(guess)
+            }
         }
     }
 }
