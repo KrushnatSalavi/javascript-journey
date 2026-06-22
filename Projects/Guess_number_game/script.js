@@ -8,3 +8,31 @@ const lowOrHi = document.querySelector('.lowOrHi');
 const startOver = document.querySelector('.resultParas');
 
 const p = document.createElement('p');
+
+let prevGuess = [];
+let numGuess = 1;
+let playGame = true;
+
+if(playGame){
+    
+}
+
+function validateGuess(guess){
+    //
+}
+
+function cheakGuess(guess){
+    //
+}
+
+function dispalyMessage(message){
+    //
+}
+
+function endGame(){
+    //
+}
+
+function NewGame(){
+    //
+}
