@@ -48,7 +48,14 @@ function validateGuess(guess) {
 }
 
 function cheakGuess(guess) {
-    //
+    if(guess === randmNumber){
+        dispalyMessage(`You guessed it right`)
+        endGame()
+
+    }
+    else if(guess < randmNumber){
+        dispalyMessage(`Number is low than ${randmNumber}`)
+    }
 }
 
 function dispalyGuess(message) {
