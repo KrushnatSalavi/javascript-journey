@@ -32,42 +32,48 @@ function validateGuess(guess) {
         alert("Enter a number smaller than 100")
     }
     else {
-        prevGuess.push(guess);
+        prevGuess.push( guess);
         if (numGuess === 11) {
             dispalyGuess(guess)
-            dispalyMessage(`Game Over . Randome number was ${randmNumber}`)
-            endGame()
+            dispalyMessage(`Game Over . Randome number was ${randmNumber}`);
+            endGame();
 
         }
         else {
-            dispalyGuess(guess){
-                cheakGuess(guess)
+            dispalyGuess(guess)
+            cheakGuess(guess);
             }
         }
     }
-}
+
 
 function cheakGuess(guess) {
-    if(guess === randmNumber){
+    if (guess === randmNumber) {
         dispalyMessage(`You guessed it right`)
         endGame()
 
     }
-    else if(guess < randmNumber){
-        dispalyMessage(`Number is low than ${randmNumber}`)
+    else if (guess < randmNumber) {
+        dispalyMessage(`Number is to low `)
+    }
+    else if (guess > randmNumber) {
+        dispalyMessage(`Number is to higer `)
     }
 }
 
-function dispalyGuess(message) {
-    //
+function dispalyGuess(guess) {
+    userInput.value = '';
+    guessSlot.innerHTML +=`${guess} `;
+    numGuess++;
+    remaining.innerHTML = `${11-numGuess}`;
 }
 
 function dispalyMessage(message) {
-    //
+    lowOrHi.innerHTML = `<h2>${message}</h2>`
 }
 
 function endGame() {
-    //
+    
 }
 
 function NewGame() {
