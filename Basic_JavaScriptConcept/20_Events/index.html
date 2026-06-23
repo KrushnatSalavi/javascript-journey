@@ -13,7 +13,7 @@
         <li><img width="200px" id="travel2" src="../Images/travel2.jpg" alt="travel2"></li>
         <li><img width="200px" id="travel3" src="../Images/travel3.jpg" alt="travel3"></li>
         <li><img width="200px" id="travel4" src="../Images/travel4.jpg" alt="travel4"></li>
-        <li><a style="color: aliceblue;" href="https://google.com "> Google</a></li>
+        <li><a style="color: aliceblue;" id="google" href="https://google.com "> Google</a></li>
     </ul>
 
 </body>
@@ -34,7 +34,12 @@
     document.getElementById('travel2').addEventListener('click', function (e) {
         console.log("Travel just clicked");
         e.stopPropagation
-        //element stop bubling 
+        //element stop bubling  
+    })
+
+    document.getElementById('google').addEventListener('click',function(e){
+        e.preventDefault();
+        e.stopPropagation();
     })
 
 
