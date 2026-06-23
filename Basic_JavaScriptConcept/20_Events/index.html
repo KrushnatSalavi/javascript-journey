@@ -1,23 +1,33 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Events Js</title>
 </head>
+
 <body style="background-color: #414141; color: aliceblue;">
     <ul style="list-style: none;">
         <li><img width="200px" id="travel" src="../Images/travel.jpg" alt="travel"></li>
         <li><img width="200px" id="travel2" src="../Images/travel2.jpg" alt="travel2"></li>
-        <li><img width="200px" id="travel3" src="../Images/travel3.jpg" alt="travel3" ></li>
+        <li><img width="200px" id="travel3" src="../Images/travel3.jpg" alt="travel3"></li>
         <li><img width="200px" id="travel4" src="../Images/travel4.jpg" alt="travel4"></li>
         <li><a style="color: aliceblue;" href="https://google.com "> Google</a></li>
     </ul>
-    
+
 </body>
 <script>
-    document.getElementById('travel2').onclick = function(){
+    // document.getElementById('travel2').onclick = function(){
+    //     alert("Travel just clicked")
+    // }
+
+    document.getElementById('travel').addEventListener('click',function(){
         alert("Travel just clicked")
-    }
-    </script>
+    })
+
+    
+
+</script>
+
 </html>
