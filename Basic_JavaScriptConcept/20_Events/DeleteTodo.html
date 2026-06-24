@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <ul id="todos">
+
+        <li>
+            Learn JS
+            <button>Delete</button>
+        </li>
+
+        <li>
+            Learn Python
+            <button>Delete</button>
+        </li>
+
+        <li>
+            Learn Java
+            <button>Delete</button>
+        </li>
+
+    </ul>
+</body>
+<script>
+    todos.addEventListener(
+    "click",
+    (e) => {
+
+        if(
+            e.target.tagName ===
+            "BUTTON"
+        ) {
+
+            e.target.parentElement
+                .remove();
+
+        }
+
+    }
+);
+</script>
+
+</html>
