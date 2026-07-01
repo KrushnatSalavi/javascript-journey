@@ -1,6 +1,6 @@
 const insert = document.getElementById('insert')
 
-window.addEventListener('key', (e) => {
+window.addEventListener('keydown', (e) => {
     insert.innerHTML = `
     <div class='color'>
     <table>
@@ -10,12 +10,12 @@ window.addEventListener('key', (e) => {
     <th>Code</th>
   </tr>
   <tr>
-    <td>Alfreds Futterkiste</td>
-    <td>Maria Anders</td>
-    <td>Germany</td>
+    <td>${e.key === ' ' ?'Space' : e.key}</td>
+    <td>${e.keyCode}</td>
+    <td>${e.code}</td>
   </tr>
   
 </table>
     </div>
-    `
-})
+    `;
+});
