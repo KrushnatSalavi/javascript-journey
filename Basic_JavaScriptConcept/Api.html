@@ -4,25 +4,47 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>GitHub Profile</title>
 </head>
 
 <body style="background-color: #212121;">
 
+    <script>
+        // Create the card
+        const newdiv = document.createElement('div');
+        newdiv.style.height = '200px';
+        newdiv.style.width = '300px';
+        newdiv.style.padding = '20px';
+        newdiv.style.margin = '50px auto';
+        newdiv.style.backgroundColor = 'pink';
+        newdiv.style.borderRadius = '10px';
+        document.body.appendChild(newdiv);
+
+
+        const requestUrl = 'https://api.github.com/users/KrushnatSalavi';
+
+        const xhr = new XMLHttpRequest();
+        xhr.open('GET', requestUrl);
+
+        xhr.onreadystatechange = function () {
+            if (xhr.readyState === 4 && xhr.status === 200) {
+
+                const data = JSON.parse(xhr.responseText);
+                console.log(data);
+
+                newdiv.innerHTML = `
+                    <img src="${data.avatar_url}" width="80" style="border-radius:50%;">          
+                    <h2>${data.name}</h2>
+                    <p>Username: ${data.login}</p>
+                    <p>Followers: ${data.followers}</p>
+                `;
+            }
+        };
+
+        xhr.send();
+
+    </script>
+
 </body>
-<script>
-    const requestUrl = 'https://api.github.com/users/KrushnatSalavi'
-    const xhr = new XMLHttpRequest();
-    xhr.open('GET', requestUrl)
-    xhr.onreadystatechange = function () {
-        console.log(xhr.readyState);
-        if (xhr.readyState === 4) {
-            const data = JSON.parse(this.responseText)
-            console.log(data);
-            console.log(data.followers);
-        }
-    }
-    xhr.send();
-</script>
 
 </html>
