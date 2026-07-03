@@ -25,3 +25,14 @@ promise2
     .catch(error => {
         console.log(error);
     });
+
+const PromiseOne = new Promise((resolve,reject)=>{
+    setTimeout(()=>{
+        console.log("Async task is completed")
+        resolve()
+    },1000)
+})
+
+PromiseOne.then(()=>{
+    console.log("promise consumed")
+})
