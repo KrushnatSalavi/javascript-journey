@@ -36,3 +36,16 @@ const PromiseOne = new Promise((resolve,reject)=>{
 PromiseOne.then(()=>{
     console.log("promise consumed")
 })
+
+const promise3 = new Promise((resolve,reject)=>{
+    setTimeout(()=>{
+        resolve({
+            user: 'Krushna',
+            email : 'krushna@gmail.com'
+        })
+    },1000)
+})
+
+promise3.then((user)=>{
+    console.log(user);
+})
