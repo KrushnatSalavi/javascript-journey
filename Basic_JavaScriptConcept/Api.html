@@ -20,29 +20,31 @@
         newdiv.style.borderRadius = '10px';
         document.body.appendChild(newdiv);
 
+        function info() {
+            const requestUrl = 'https://api.github.com/users/KrushnatSalavi';
 
-        const requestUrl = 'https://api.github.com/users/KrushnatSalavi';
+            const xhr = new XMLHttpRequest();
+            xhr.open('GET', requestUrl);
 
-        const xhr = new XMLHttpRequest();
-        xhr.open('GET', requestUrl);
+            xhr.onreadystatechange = function () {
+                if (xhr.readyState === 4) {
 
-        xhr.onreadystatechange = function () {
-            if (xhr.readyState === 4 && xhr.status === 200) {
+                    const data = JSON.parse(xhr.responseText);
+                    console.log(data);
 
-                const data = JSON.parse(xhr.responseText);
-                console.log(data);
-
-                newdiv.innerHTML = `
+                    newdiv.innerHTML = `
                     <img src="${data.avatar_url}" width="80" style="border-radius:50%;">          
                     <h2>${data.name}</h2>
                     <p>Username: ${data.login}</p>
                     <p>Followers: ${data.followers}</p>
                 `;
-            }
-        };
+                }
+            };
 
-        xhr.send();
+            xhr.send();
+        }
 
+        info()
     </script>
 
 </body>
