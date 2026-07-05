@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bind</title>
+</head>
+<body>
+
+    <button>Click Me</button>
+    
+</bod>
+<Script>
+    class React{
+        constructor(){
+            this.library = "React"
+            this.server = "https//localhost:300"
+
+            document.querySelector('button')
+            .addEventListener('click',this.handlClick.bind(this))
+            
+        }
+
+        handlClick(){
+            console.log("Button Cliked");
+            console.log(this.server);
+            
+            
+        }
+    }
+
+    const course = new React()
+
+   
+</Script>
+
+</html>
