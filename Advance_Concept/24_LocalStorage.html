@@ -33,6 +33,7 @@
             <input type="text" id="Fname" class="Detail"><br>
 
             <button id="save">Save Detail</button>
+            <p>My name is <span id="display"></span></p>
         </form>
     </div>
 </body>
@@ -40,12 +41,18 @@
 <script>
     const detail = document.getElementById('Fname')
     const button = document.getElementById('save')
-    document.ge
+    const dsp = document.getElementById('display')
+    
 
     button.addEventListener('click',() => {
         let info = detail.value
 
         localStorage.setItem('Name',info)
+    })
+
+    window.addEventListener('load',() =>{
+        value = localStorage.getItem('Name')
+        dsp.innerHTML = value
     })
 </script>
 </html>
