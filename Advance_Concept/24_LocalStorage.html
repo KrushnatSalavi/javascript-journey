@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: #313131;
+            color: #fff;
+
+        }
+
+        form{
+            margin:10px auto;
+            border: #fff solid 1px;
+            height: 30vh;
+           
+            padding: 30px;
+        }
+
+        #save{
+            width: 150px;
+            height: 30px;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="Container">
+        <form action="">
+            <label for="Fname">First Name</label>
+            <input type="text" id="Fname" class="Detail"><br>
+
+            <button id="save">Save Detail</button>
+        </form>
+    </div>
+</body>
+
+<script>
+    const detail = document.getElementById('Fname')
+    const button = document.getElementById('save')
+    document.ge
+
+    button.addEventListener('click',() => {
+        let info = detail.value
+
+        localStorage.setItem('Name',info)
+    })
+</script>
+</html>
