@@ -9,7 +9,7 @@
 
 .container{
     background-color: #212121;
-    height: 100vh;
+    height: 70vh;
     margin: 30px auto ;
     width: 60vh;
 }
@@ -20,6 +20,8 @@ h1{
 
 input{
     margin: 50px 50px;
+    height: 30px;
+    color: black;
 }
 
 #addBtn{
@@ -27,4 +29,15 @@ input{
     height: 30px;
     color: black;
     border-radius: 10px;
+}
+
+li{
+    color: rgb(255, 255, 255);
+    list-style: none;
+    margin-left: 50px;
+    line-height: 30px;
+}
+
+li button{
+    color: #212121;
 }
