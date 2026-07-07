@@ -1,0 +1,30 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: #ffff
+    ;
+    
+}
+
+.container{
+    background-color: #212121;
+    height: 100vh;
+    margin: 30px auto ;
+    width: 60vh;
+}
+
+h1{
+    text-align: center;
+}
+
+input{
+    margin: 50px 50px;
+}
+
+#addBtn{
+    width: 10vh;
+    height: 30px;
+    color: black;
+    border-radius: 10px;
+}
