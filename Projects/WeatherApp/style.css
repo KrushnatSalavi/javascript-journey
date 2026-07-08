@@ -1,0 +1,43 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+.container {
+    width: 40%;
+    height: 80vh;
+    background: linear-gradient(135deg, #52cbb5 0%, #468ca9 50%, #586285 100%);
+   
+    border-radius: 10px;
+    position: fixed; 
+    left: 30%;
+    margin-top: 10vh;
+
+}
+
+#input{
+    height: 5vh;
+    width: 40vh;
+    text-align:start;
+    margin: 5vh 3vh 0 8vh;
+    border-radius: 15px;
+    border: solid #fff 2px;
+}
+
+#icon{
+    height: 3vh;
+    margin-top: 10vh;
+    color: rgb(255, 255, 255);
+    border-radius: 25px;
+}
+.icon-contaner{
+    cursor: pointer;
+}
+
+img{
+    height: 50vh;
+    width: 50vh;
+    margin-left: 15vh;
+}
