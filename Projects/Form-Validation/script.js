@@ -3,10 +3,10 @@ var phoneError = document.getElementById('phone-error')
 var emailError = document.getElementById('email-error')
 var messageError = document.getElementById('message-error')
 var submitError = document.getElementById('submit-error')
-
+//
 function validateName() {
     let name = document.getElementById('contact-name').value;
-
+    
     if (name.length == 0) {
         nameError.innerHTML = "Full name required";
         return false;
