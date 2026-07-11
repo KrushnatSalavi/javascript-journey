@@ -33,12 +33,12 @@ function validatePhone() {
         return false
     }
 
-    if (phone.match(/^[0-9]{10}$/)) {
+    if (!phone.match(/^[0-9]{10}$/)) {
         phoneError.innerHTML = "phone number is required "
         return false
     }
 
-    nameError.innerHTML = '<i class="fa-regular fa-circle-check"></i>';
+    phoneError.innerHTML = '<i class="fa-regular fa-circle-check"></i>';
     return true;
 }
 
@@ -46,16 +46,39 @@ function validateEmail() {
     let email = document.getElementById('contact-email').value;
 
     if (email.length == 0) {
-        emailErrorError.innerHTML = "email  is required "
+        emailError.innerHTML = "email  is required "
         return false
     }
 
-    if (!email.match(/^[A-Za-z]\._\-[0-9]*[@][A-Za-z]*[\.][a-z]{2,4}$/)) {
-        emailErrorError.innerHTML = "email  is invalid ! "
-        return false
-    }
-
-    emailErrorError.innerHTML = '<i class="fa-regular fa-circle-check"></i>';
+   if (!email.match(/^[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,}$/)) {
+    emailError.innerHTML = "Email is invalid!";
+    return false;
+}
+    emailError.innerHTML = '<i class="fa-regular fa-circle-check"></i>';
     return true;
 
+}
+
+function validateMessage() {
+    let message = document.getElementById('contact-message').value;
+    let required = 30;
+    let left = required - message.length;
+
+    if (left > 0) {
+        messageError.innerHTML = left + 'More character requre'
+        return false
+    }
+
+    messageError.innerHTML = '<i class="fa-regular fa-circle-check"></i>';
+    return true;
+
+}
+
+function validateForm(){
+    if(!validateName() || !validatePhone || !validateEmail() || !validateMessage()){
+        submitError.style.display = 'block'
+        submitError.innerHTML = 'Please Fill every field'
+        setTimeout(function(){submitError.style.display = 'none'},3000)
+        return false;
+    }
 }
