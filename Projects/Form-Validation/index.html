@@ -15,20 +15,20 @@
 
       <div class="input-group">
         <label>Full Name</label>
-        <input type="text" placeholder="Enter your name">
+        <input type="text" placeholder="Enter your name" id="contact-name" onkeyup="validateName()">
         <span id="name-error"></span>
 
       </div>
 
       <div class="input-group">
         <label>Phone No.</label>
-        <input type="tel" placeholder="123 456 7890">
+        <input type="tel" placeholder="123 456 7890" id="contact-phone" onkeyup="validatePhone()">
         <span id="phone-error"></span>
       </div>
 
       <div class="input-group">
         <label>Email Id</label>
-        <input type="email" placeholder="Enter Email">
+        <input type="email" placeholder="Enter Email" id="contact-email" onkeyup="validateEmail()">
         <span id="email-error"></span>
       </div>
 
@@ -47,6 +47,9 @@
 
   </div>
 
+
 </body>
+  <script src="/Projects/Form-Validation/script.js"></script>
+
 
 </html>
