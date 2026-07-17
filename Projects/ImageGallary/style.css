@@ -2,5 +2,40 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'poppins',sans-serif;
+}
 
+body{
+    background: rgba(207, 203, 207, 0.067);
+}
+
+.gallary{
+    width: 900px;
+    display: flex;
+    overflow: scroll;
+}
+
+.gallary div{
+    width: 100%;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-gap: 20px;
+    padding: 10px;
+    flex: none;
+}
+
+.gallary div img{
+    width: 100%;
+
+}
+
+.gallary::-webkit-scrollbar{
+    display: none;
+}
+
+.gallary-wrap{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10% auto;
 }
